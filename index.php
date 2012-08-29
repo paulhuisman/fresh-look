@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="css/colorbox.css" />
 	<link rel="stylesheet" type="text/css" href="css/bootstrap-1.1.0.css" />
 	<link rel="stylesheet" type="text/css" href="css/paul.css" />
-	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 	<script type="text/javascript" src="js/cufon-yui.js"></script>
 	<script type="text/javascript" src="js/hover_intent.js"></script>
 	<script type="text/javascript" src="js/jquery.colorbox-min.js"></script>
@@ -83,25 +83,27 @@
 				?>
 				
 				<?php $count = 0; ?>
-				<?php foreach ($photos_array as $item_file => $item_descr) : ?>
-					<div class="recentwork-item <?php if ($count == 2) print ' third'; ?>">
-						<a class="lightbox" href="images/photos/big/<?php print $item_file; ?>.jpg" title="<?php print $item_descr; ?>" rel="group1">
-							<div class="item-image-bg"></div>
-							<img class="item-image" src="images/photos/thumbs/<?php print $item_file; ?>.jpg" alt="<?php print $item_descr; ?>" />
-							<div class="item-layover"></div>
-							<div class="item-description web"><?php print $item_descr; ?></div>							
-						</a>
+				<div id="carousel_wrapper">
+					<div id="main_carousel">
+						<?php foreach ($photos_array as $item_file => $item_descr) : ?>
+							<?php if ($count % 6 == 0 ) echo '<div class="carousel_row">'; ?>
+								<div class="recentwork-item">
+									<a class="lightbox" href="images/photos/big/<?php print $item_file; ?>.jpg" title="<?php print $item_descr; ?>" rel="group1">
+										<div class="item-image-bg"></div>
+										<img class="item-image" src="images/photos/thumbs/<?php print $item_file; ?>.jpg" alt="<?php print $item_descr; ?>" />
+										<div class="item-layover"></div>
+										<div class="item-description web"><?php print $item_descr; ?></div>							
+									</a>
+								</div>
+							<?php if ($count  % 6 == 5 ) echo '</div>'; ?>
+							<?php $count++; ?>
+						<?php endforeach; ?>
 					</div>
-					<?php $count++; ?>
-					<?php if ($count == 3) $count = 0; ?>
-				<?php endforeach; ?>
-				
-				<div style="clear:both"></div>
-				
-				<h2 class="dinot-font px-intro">
-					<a href="http://www.500px.com/paulhuisman" title="Go to Paul Huisman's 500px page">For more photos check 500px.com/paulhuisman!</a>
-				</h2>
-				
+					<div id="c_nav"></div>
+					<div id="prev_s">prev</div>				
+					<div id="next_s">next</div>	
+				</div>
+
 				<h2 class="dinot-font web-intro">Be sure to check out some of the internet projects I've been involved in below!</h2>
 				
 				<div class="web-section" id="web">

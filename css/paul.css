@@ -26,6 +26,51 @@ body {
 }
 
 /*** CONTENT ***/
+#carousel_wrapper {
+	position:relative;
+}
+#carousel_wrapper #next_s,
+#carousel_wrapper #prev_s {
+	position:absolute;
+	top:150px;
+	cursor:pointer;
+	display:block;
+	width:45px;
+	height:67px;
+	text-indent:-9999px;
+	-webkit-box-shadow: 1px 1px 2px 1px #333;
+	box-shadow: 1px 1px 2px 1px #333;
+}
+#carousel_wrapper #prev_s {
+	left:-100px;
+	background:url('../images/c_arrows.png') 0 0 no-repeat;
+}
+#carousel_wrapper #next_s {
+	right:-100px;
+	background:url('../images/c_arrows.png') -45px 0 no-repeat;
+}
+#main_carousel {
+	height:410px;
+}
+.carousel_row {
+	width:960px;
+}
+#c_nav {
+	margin:7px 0 20px 0;
+	height:30px;
+	text-align:center;
+}
+#c_nav a {
+	background:url('../images/bullets.png') no-repeat 0 0;
+	width:13px;
+	height:13px;
+	display:inline-block;
+	text-indent:-9999px;
+	margin:0 3px 0 0;
+}
+#c_nav a.activeSlide {
+	background-position:0 -12px;
+}
 .intro-image {
 	text-indent:-9999px;
 	display:block;

@@ -111,6 +111,15 @@ $(document).ready(function() {
 		return false;
 	})	
 	
+	$('#main_carousel').cycle({
+		fx:'scrollHorz',
+	    speed:  '800', 
+	    pause				: true,
+		timeout				: 6000, 
+	    next:   '#next_s', 
+	    prev:   '#prev_s',
+	    pager: '#c_nav',
+	});
 	  
 });
 
