@@ -38,8 +38,6 @@ body {
 	width:45px;
 	height:67px;
 	text-indent:-9999px;
-	-webkit-box-shadow: 1px 1px 2px 1px #333;
-	box-shadow: 1px 1px 2px 1px #333;
 }
 #carousel_wrapper #prev_s {
 	left:-100px;
@@ -50,7 +48,7 @@ body {
 	background:url('../images/c_arrows.png') -45px 0 no-repeat;
 }
 #main_carousel {
-	height:410px;
+	height:402px;
 }
 .carousel_row {
 	width:960px;
@@ -111,6 +109,8 @@ body {
 .introtext {
 	-webkit-box-shadow: 1px 1px 2px 1px #333;
 	box-shadow: 1px 1px 2px 1px #333;
+	background:transparent url('../images/header_r2.png') repeat;
+	color:#fff;
 }
 .px-intro {
 	background:url('../images/item_bg.png') repeat;
@@ -198,16 +198,21 @@ body {
 	z-index:44;
 }
 .recentwork-item .item-description {
+	/*display:none;
+	position:Absolute;
+	bottom:0;
+	left:0;*/
 	background:url('../images/item_bg.png') repeat;
 	font-size:13px;
 	padding:2px 0 3px 0;
 	margin:0;
-	color:#fff;
+	color:#ddd;
+	
 	width:300px;
 	text-align:center;
 	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
 }
 a:hover {
 	text-decoration:none;

@@ -120,6 +120,12 @@ $(document).ready(function() {
 	    prev:   '#prev_s',
 	    pager: '#c_nav',
 	});
+
+	$('.recentwork-item .item-image').each(function(){
+		$(this).hover(function(){
+			console.log('moo');
+		})
+	})
 	  
 });
 
