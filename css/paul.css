@@ -47,6 +47,14 @@ body {
 	right:-100px;
 	background:url('../images/c_arrows.png') -45px 0 no-repeat;
 }
+#carousel_wrapper #prev_s:hover {
+	background-position:0 -71px;
+	height:70px;
+}
+#carousel_wrapper #next_s:hover {
+	background-position:-45px -71px;
+	height:70px;
+}
 #main_carousel {
 	height:402px;
 }
@@ -105,12 +113,10 @@ body {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px; 
-}
-.introtext {
-	-webkit-box-shadow: 1px 1px 2px 1px #333;
-	box-shadow: 1px 1px 2px 1px #333;
 	background:transparent url('../images/header_r2.png') repeat;
 	color:#fff;
+	-webkit-box-shadow: 1px 1px 2px 1px #333;
+	box-shadow: 1px 1px 2px 1px #333;
 }
 .px-intro {
 	background:url('../images/item_bg.png') repeat;
@@ -211,8 +217,8 @@ body {
 	width:300px;
 	text-align:center;
 	-webkit-border-radius: 5px;
--moz-border-radius: 5px;
-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 }
 a:hover {
 	text-decoration:none;
