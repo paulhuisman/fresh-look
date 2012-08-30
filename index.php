@@ -124,7 +124,7 @@
 					<div class="web-item second">
 						<a href="flickr-field">
 							<div class="web-image">
-								<img class="item-image" src="images/web/flickr_field.png" alt="Flickr Field" />
+								<img class="item-image" src="images/web/flickr.png" alt="Flickr Field" />
 								<div class="web-item-layover"></div>
 							</div>
 						</a>

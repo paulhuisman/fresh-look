@@ -113,6 +113,7 @@ $(document).ready(function() {
 	
 	$('#main_carousel').cycle({
 		fx:'scrollHorz',
+		easing: 'easeOutQuad',
 	    speed:  '800', 
 	    pause				: true,
 		timeout				: 6000, 

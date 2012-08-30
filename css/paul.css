@@ -56,7 +56,7 @@ body {
 	height:70px;
 }
 #main_carousel {
-	height:402px;
+	height:358px;
 }
 .carousel_row {
 	width:960px;
@@ -88,6 +88,8 @@ body {
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px; 
+	-moz-box-shadow: 0px 1px 3px 0px #222;
+	box-shadow: 0px 1px 3px 0px #222;
 }
 .intro-image.flickr-logo {
 	background:url('../images/flickr-logo.png');	
@@ -115,8 +117,8 @@ body {
 	border-radius: 5px; 
 	background:transparent url('../images/header_r2.png') repeat;
 	color:#fff;
-	-webkit-box-shadow: 1px 1px 2px 1px #333;
-	box-shadow: 1px 1px 2px 1px #333;
+	-moz-box-shadow: 0px 1px 3px 0px #222;
+	box-shadow: 0px 1px 3px 0px #222;
 }
 .px-intro {
 	background:url('../images/item_bg.png') repeat;
@@ -187,10 +189,11 @@ body {
 	height:157px;
 	width:300px;
 	z-index:24;
-	background:#fff;
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;
+	-moz-box-shadow: 0px 1px 3px 0px #222;
+	box-shadow: 0px 1px 3px 0px #222;
 }
 
 .recentwork-item  img {
@@ -204,10 +207,10 @@ body {
 	z-index:44;
 }
 .recentwork-item .item-description {
-	/*display:none;
+	display:none;
 	position:Absolute;
 	bottom:0;
-	left:0;*/
+	left:0;
 	background:url('../images/item_bg.png') repeat;
 	font-size:13px;
 	padding:2px 0 3px 0;
@@ -251,17 +254,12 @@ a:hover {
 	margin:20px 0 ;
 }
 .web-item {
-	background:url('../images/item_bg.png') repeat;
 	font-size:13px;
-	padding:10px;
 	margin:0;
 	color:#fff;
 	width:440px;
 	min-height:113px;
 	float:left;
-	-webkit-border-radius: 5px;
-	-moz-border-radius: 5px;
-	border-radius: 5px;
 	color:#ccc;
 	margin:0 20px 20px 0;
 }
@@ -274,11 +272,19 @@ a:hover {
 }
 .web-item .web-image {
 	float:left;
-	margin:0 10px 0 0;
-	width:183px;
-	height:116px;
+	margin:0 15px 0 0;
+	width:180px;
+	height:113px;
+	padding:10px;
 	position:relative;
+	background:url('../images/item_bg.png') repeat;
+	background:transparent url('../images/header_r2.png') repeat;
 	z-index:444;
+	-moz-box-shadow: 0px 1px 3px 0px #222;
+	box-shadow: 0px 1px 3px 0px #222;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	
 }
 .content .px {
@@ -293,8 +299,8 @@ a:hover {
 	margin:0;
 	padding:0;
 	position:absolute;
-	top:0;
-	left:0;
+	top:10px;
+	left:10px;
 	display:block;
 	height:113px;
 	width:180px;
