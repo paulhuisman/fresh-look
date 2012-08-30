@@ -1,9 +1,7 @@
-
 Cufon.replace('.dinot-font', {
     hover: true,
     fontFamily: 'DINOT-Regular'
 });
-
 Cufon.replace('.whitney-font', { fontFamily: 'Whitney Semibold' });
 Cufon.replace('.whatup-quote', { fontFamily: 'Whitney Semibold' });
 Cufon.replace('.home-link', { fontFamily: 'Whitney Semibold' });
@@ -37,11 +35,6 @@ $(document).ready(function() {
 		}
 	);
 		
-	/*
-	if ( $.browser.msie ) {
-		$('#wrapper').css('background-color','#999');
-	}
-	*/
 	
 	// Dropdown example for topbar nav
 	// ===============================
@@ -113,7 +106,7 @@ $(document).ready(function() {
 	
 	$('#main_carousel').cycle({
 		fx:'scrollHorz',
-		easing: 'easeOutQuad',
+		easing: 'easeInOutExpo',
 	    speed:  '800', 
 	    pause				: true,
 		timeout				: 6000, 
@@ -124,7 +117,7 @@ $(document).ready(function() {
 
 	$('.recentwork-item .item-image').each(function(){
 		$(this).hover(function(){
-			console.log('moo');
+			// work work
 		})
 	})
 	  

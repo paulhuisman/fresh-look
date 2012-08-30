@@ -116,7 +116,7 @@
 						</a>
 						<h3><a href="http://www.dewillem.nl">De Willem</a></h3>
 						<div class="web-item-description">
-							<strong>Client:</strong>&nbsp;De Willem<br />
+							<strong>Client:</strong>&nbsp;De Willem (middle school)<br />
 							<div class="live"><strong>Live:</strong>&nbsp;25-08-2012</div>
 	
 						</div>

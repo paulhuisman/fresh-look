@@ -48,11 +48,11 @@ body {
 	background:url('../images/c_arrows.png') -45px 0 no-repeat;
 }
 #carousel_wrapper #prev_s:hover {
-	background-position:0 -71px;
+	background-position:0 -72px;
 	height:70px;
 }
 #carousel_wrapper #next_s:hover {
-	background-position:-45px -71px;
+	background-position:-45px -72px;
 	height:70px;
 }
 #main_carousel {
